@@ -8,6 +8,12 @@ import { EnteringThirdNumberState } from './entering-third-number.state';
 import { ErrorState } from './error.state';
 
 export class EnteringSecondNumberState extends AbstractCalculatorState implements ICalculatorState {
+  static clear() {
+    throw new Error('Method not implemented.');
+  }
+  static display() {
+    throw new Error('Method not implemented.');
+  }
   public constructor(context: IContext, data: IStateData) {
     super(context, data);
   }

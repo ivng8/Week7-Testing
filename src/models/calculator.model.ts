@@ -10,6 +10,9 @@ import { EnteringFirstNumberState } from '../states/entering-first-number.state'
 import { StateData } from './state-data.model';
 
 export class CalculatorModel implements ICalculatorModel, IContext {
+  static changeState(changeState: any) {
+    throw new Error('Method not implemented.');
+  }
 
   private _state: ICalculatorState;
   private _observers: ICalculatorObserver[];

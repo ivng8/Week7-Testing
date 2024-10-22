@@ -2,6 +2,9 @@ import { OperatorKeys } from '../enums';
 import { IStateData } from '../interfaces';
 
 export class StateData implements IStateData {
+  static display(display: any) {
+    throw new Error('Method not implemented.');
+  }
 
   // eslint-disable-next-line @typescript-eslint/typedef
   public static Builder = class Builder {
